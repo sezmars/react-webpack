@@ -1,6 +1,6 @@
-import buildWebpackConfig from "./config/build/buildWebpackConfig";
-import {BuildEnv, BuildPaths} from "./config/build/types/config";
-import path from "path"; // to access built-in plugins
+import path from "path";
+import {BuildEnv, BuildPaths} from "./config/build-webpack/types/config";
+import buildWebpackConfig from "./config/build-webpack/buildWebpackConfig"; // to access built-in plugins
 
 
 export default (env: BuildEnv) => {
