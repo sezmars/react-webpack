@@ -1,5 +1,5 @@
 {
-  "name": "webpack",
+  "name": "smart-webpack",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,8 +9,17 @@
     "build:dev": "webpack --env mode=development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "webpack",
+    "react",
+    "boilerplate",
+    "react boilerplate",
+    "starter kit",
+    "react starter kit",
+    "smart webpack",
+    "solid"
+  ],
+  "author": "sezmars",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.8.0",
