@@ -2,7 +2,7 @@ import styles from "./About.module.scss";
 
 const About = () => {
     return (
-        <div className={styles.conteiner}>
+        <div className={styles.container}>
             <b>Smart Webpack setup for React</b>
         </div>
     );
