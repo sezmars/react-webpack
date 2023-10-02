@@ -1,11 +1,11 @@
 import React, {lazy, Suspense} from "react";
 import {NavLink, Route, Routes} from "react-router-dom";
-import useTheme from "./theme/useTheme";
-import ThemeToggle from "./components/ThemeToggle";
-import {classNames} from "./helpers/classNames/classNames";
+import useTheme from "shared/theme/useTheme";
+import ThemeToggle from "shared/components/ThemeToggle";
+import {classNames} from "shared/lib/classNames/classNames";
 
-const About = lazy(() => import('./pages/About'));
-const Home = lazy(() => import('./pages/Home'));
+const About = lazy(() => import('../pages/About'));
+const Home = lazy(() => import('../pages/Home'));
 
 const App = () => {
     const {theme, toggleTheme} = useTheme()

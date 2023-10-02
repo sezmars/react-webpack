@@ -1,5 +1,5 @@
-import useTheme from "../theme/useTheme";
-import {Theme} from "../theme/ThemeContext";
+import useTheme from "shared/theme/useTheme";
+import {Theme} from "shared/theme/ThemeContext";
 import styles from "./ThemeToggle.module.scss";
 import {HiOutlineMoon, HiOutlineSun} from "react-icons/hi2";
 
