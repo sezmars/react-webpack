@@ -22,7 +22,7 @@ nav {
 
   a {
     margin: 20px 10px 0;
-    color: #464141;
+    color: var(--color-grey-500);
     text-decoration: none;
     display: inline-block;
     text-transform: uppercase;
@@ -30,11 +30,11 @@ nav {
     position: relative;
 
     &.active {
-      color: var(--color-brand-500);
+      color: var(--secondary-color);
     }
 
     &:hover {
-      color: var(--color-brand-500);
+      color: var(--color-grey-500);
 
       &:after {
         opacity: 1;
