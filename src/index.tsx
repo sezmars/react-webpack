@@ -7,7 +7,7 @@ import {ThemeProvider} from "shared/theme/ThemeProvider";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basename={document.location.pathname !== '/' ? '/react-webpack/' : '/'}>
             <ThemeProvider>
                 <App/>
             </ThemeProvider>
