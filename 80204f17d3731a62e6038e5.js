@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksmart_webpack=self.webpackChunksmart_webpack||[]).push([[802],{802:(e,a,s)=>{s.r(a),s.d(a,{default:()=>r});var c=s(893);const r=function(){return(0,c.jsx)("div",{className:"nvjwlXbL",children:(0,c.jsx)("b",{children:"Smart Webpack setup for React"})})}}}]);
