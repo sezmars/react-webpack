@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "outDir": "./build/",
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    // https://www.typescriptlang.org/tsconfig#Interop_Constraints_6252
+    "allowSyntheticDefaultImports": true,
+    // https://www.typescriptlang.org/tsconfig#esModuleInterop
+    "esModuleInterop": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
