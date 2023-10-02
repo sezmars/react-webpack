@@ -6,6 +6,11 @@
     "target": "es5",
     "jsx": "react-jsx",
     "baseUrl": ".",
+    "paths": {
+      "*": [
+        "./src/*"
+      ]
+    },
     "allowJs": true,
     "moduleResolution": "node",
     // https://www.typescriptlang.org/tsconfig#Interop_Constraints_6252
