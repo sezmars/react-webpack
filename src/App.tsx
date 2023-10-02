@@ -1,16 +1,22 @@
 import React, {lazy, Suspense} from "react";
 import {NavLink, Route, Routes} from "react-router-dom";
+import useTheme from "./theme/useTheme";
+import ThemeToggle from "./components/ThemeToggle";
 
 const About = lazy(() => import('./pages/About'));
 const Home = lazy(() => import('./pages/Home'));
 
 const App = () => {
+    const {theme, toggleTheme} = useTheme()
     return (
-        <div className="app">
-            <nav>
-                <NavLink to='/'>Home</NavLink>
-                <NavLink  to='/about'>About</NavLink>
-            </nav>
+        <div className={`app ${theme}`}>
+            <div className="d-flex">
+                <nav>
+                    <NavLink to='/'>Home</NavLink>
+                    <NavLink to='/about'>About</NavLink>
+                </nav>
+                <ThemeToggle/>
+            </div>
             <Suspense fallback={'Loading...'}>
                 <Routes>
                     <Route path='/about' element={<About/>}/>
