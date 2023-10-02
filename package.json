@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "url": "git+https://github.com/sezmars/react-webpack.git"
+  },
   "scripts": {
     "start": "webpack serve --env port=3000",
     "build:prod": "webpack --env mode=production",
     "build:dev": "webpack --env mode=development",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build:prod && cp build/index.html dist/404.html",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "webpack",
@@ -25,6 +30,7 @@
     "@types/node": "^20.8.0",
     "@types/webpack": "^5.28.3",
     "css-loader": "^6.8.1",
+    "gh-pages": "^6.0.0",
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
     "sass": "^1.68.0",
