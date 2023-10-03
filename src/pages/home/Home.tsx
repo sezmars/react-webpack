@@ -1,5 +1,5 @@
-import {Counter} from "shared/components/Counter";
 import styles from "./Home.module.scss";
+import {Counter} from "entities/counter/Counter";
 
 const Home = () => {
     return (
